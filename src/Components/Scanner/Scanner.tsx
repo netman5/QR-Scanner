@@ -5,7 +5,7 @@ import { Box } from '@mui/material';
 
 
 const Scanner = () => {
-  const { data, error, loading } = useFetch('http://localhost:9000/api/qrcode', { data: { message: '', data: '' } })
+  const { data, error, loading } = useFetch('https://qr-code-generator-gwvza5fz8-netman5.vercel.app/api/qrcode', { data: { message: '', data: '' } })
 
   if (error) return <Typography variant='h2' sx={{ textAlign: 'center' }}>Error</Typography>
 
